@@ -1,0 +1,2 @@
+username = azmir
+psswrd = azmir123
