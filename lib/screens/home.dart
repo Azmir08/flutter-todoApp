@@ -4,7 +4,7 @@ import 'package:todo_app/widgets/todo_item.dart';
 import 'package:todo_app/model/todo.dart';
 
 class Home extends StatefulWidget {
-  Home({super.key});
+  const Home({super.key});
 
   @override
   State<Home> createState() => _HomeState();
@@ -147,7 +147,7 @@ class _HomeState extends State<Home> {
       results = todosList;
     } else {
       results = todosList
-          .where((item) => item.todoText!
+          .where((item) => item.todoText
               .toLowerCase()
               .contains(enteredKeyword.toLowerCase()))
           .toList();
